@@ -9,14 +9,13 @@
   width: 100%;
   background-color: #ffffff;
   border-bottom: 1px solid #e0e0e0;
-  padding: 1.25rem 2rem;
+  padding: 1.25rem 4rem;
 }
 
 .featuresContainer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 3rem;
   max-width: 1200px;
   margin: 0 auto;
 }
