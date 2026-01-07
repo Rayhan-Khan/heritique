@@ -2,6 +2,13 @@ import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
 
 const Footer = () => {
+  const features = [
+    { id: 1, icon: 'fas fa-shipping-fast', title: 'Fast delivery' },
+    { id: 2, icon: 'fas fa-thumbs-up', title: 'Quality Product' },
+    { id: 3, icon: 'fas fa-undo', title: 'Easy Returns' },
+    { id: 4, icon: 'fas fa-headset', title: 'Strong Support' }
+  ];
+
   const quickLinks = [
     { name: 'Contact us', path: '/contact' },
     { name: 'My account', path: '/login' },
@@ -30,6 +37,18 @@ const Footer = () => {
 
   return (
     <footer className={styles.footer}>
+      {/* Features Bar */}
+      <div className={styles.featuresBar}>
+        <div className={styles.featuresContainer}>
+          {features.map((feature) => (
+            <div key={feature.id} className={styles.featureItem}>
+              <i className={`${feature.icon} ${styles.featureIcon}`}></i>
+              <span className={styles.featureTitle}>{feature.title}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
       <div className={styles.footerContent}>
         {/* Logo and Company Info */}
         <div className={styles.footerSection}>
