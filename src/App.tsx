@@ -1,6 +1,7 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { Toaster } from 'sonner';
 import Header from './common/Header';
+import Footer from './common/Footer';
 import HomePage from './pages/HomePage';
 import ShopPage from './pages/ShopPage';
 import KitchenStoragePage from './pages/KitchenStoragePage';
@@ -40,6 +41,7 @@ function App() {
         {/* Catch all - redirect to home */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
+      <Footer />
     </>
   );
 }
