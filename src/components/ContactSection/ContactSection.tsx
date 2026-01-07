@@ -34,13 +34,13 @@ const ContactSection = () => {
           <h2 className={styles.companyName}>Homentry LLC</h2>
           <div className={styles.contactInfo}>
             <div className={styles.infoItem}>
-              <strong>Phone:</strong> <a href="tel:+13074009076">+13074009076</a>
+              <strong>Phone:</strong> <a href="tel:01XXX">01XXX</a>
             </div>
             <div className={styles.infoItem}>
-              <strong>Email:</strong> <a href="mailto:hello@homentry.net">hello@homentry.net</a>
+              <strong>Email:</strong> <a href="mailto:pappow@gmail.com">pappow@gmail.com</a>
             </div>
             <div className={styles.infoItem}>
-              <strong>Address:</strong> 30 N Gould St # 7619 Sheridan, wyoming 82801, USA
+              <strong>Address:</strong> Dhaka, Gulshan
             </div>
           </div>
         </div>
