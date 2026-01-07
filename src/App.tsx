@@ -7,6 +7,7 @@ import ShopPage from './pages/ShopPage';
 import KitchenStoragePage from './pages/KitchenStoragePage';
 import BlogPage from './pages/BlogPage';
 import ContactPage from './pages/ContactPage';
+import CartPage from './pages/CartPage';
 import LoginPage from './pages/LoginPage';
 import RegistrationPage from './pages/RegistrationPage';
 import ProductDetailPage from './pages/ProductDetailPage';
@@ -24,6 +25,7 @@ function App() {
         <Route path="/kitchen-storage" element={<KitchenStoragePage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/cart" element={<CartPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/registration" element={<RegistrationPage />} />
 

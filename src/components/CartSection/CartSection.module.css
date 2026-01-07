@@ -1,0 +1,302 @@
+.cartSection {
+  padding: 2rem 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: 60vh;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+  font-size: 1.5rem;
+  justify-content: center;
+}
+
+.breadcrumb .active {
+  font-weight: 700;
+  color: #000;
+}
+
+.breadcrumb span:not(.active):not(.separator) {
+  color: #666;
+}
+
+.separator {
+  color: #666;
+  font-weight: 400;
+}
+
+.cartContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+}
+
+.cartItems {
+  background: #fff;
+}
+
+.cartTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cartTable thead {
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.cartTable th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.cartTable tbody tr {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.cartTable td {
+  padding: 1.5rem 1rem;
+}
+
+.productInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.productImage {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.productName {
+  color: #0f1f3d;
+  font-weight: 500;
+  max-width: 300px;
+  line-height: 1.4;
+}
+
+.price,
+.subtotal {
+  font-weight: 600;
+  color: #333;
+}
+
+.quantityInput {
+  width: 80px;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.quantityInput:focus {
+  outline: none;
+  border-color: #0f1f3d;
+}
+
+.couponSection {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.couponInput {
+  flex: 1;
+  padding: 0.875rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.couponInput:focus {
+  outline: none;
+  border-color: #0f1f3d;
+}
+
+.applyCoupon {
+  padding: 0.875rem 2rem;
+  background: #0f1f3d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.applyCoupon:hover {
+  background: #1a2f5a;
+}
+
+.cartTotals {
+  background: #f8f8f8;
+  padding: 2rem;
+  border-radius: 8px;
+  height: fit-content;
+}
+
+.totalsTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #000;
+}
+
+.totalsRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.95rem;
+}
+
+.totalsRow span {
+  color: #333;
+}
+
+.amount {
+  font-weight: 600;
+}
+
+.shippingInfo {
+  text-align: right;
+}
+
+.freeShipping {
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 0.25rem 0;
+}
+
+.shippingTo {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.changeAddress {
+  background: none;
+  border: none;
+  color: #0f1f3d;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0;
+}
+
+.totalLabel {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.totalAmount {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #000;
+}
+
+.giftCard {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #ddd;
+}
+
+.giftCardLabel {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+
+.giftCardInput {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.giftCardInput input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.giftCardInput input:focus {
+  outline: none;
+  border-color: #0f1f3d;
+}
+
+.giftCardInput button {
+  padding: 0.75rem 1.25rem;
+  background: #0f1f3d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 0.9rem;
+}
+
+.giftCardInput button:hover {
+  background: #1a2f5a;
+}
+
+.checkoutButton {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background: #0f1f3d;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  transition: background 0.3s;
+}
+
+.checkoutButton:hover {
+  background: #1a2f5a;
+}
+
+@media (max-width: 1024px) {
+  .cartContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .cartSection {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cartSection {
+    padding: 1.5rem;
+  }
+
+  .productName {
+    max-width: 150px;
+    font-size: 0.9rem;
+  }
+
+  .cartTable th,
+  .cartTable td {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .productImage {
+    width: 50px;
+    height: 50px;
+  }
+}
