@@ -1,11 +1,75 @@
+import React, { useEffect, useState } from 'react';
+import ProductCard from '../components/ProductCard';
+
+interface Product {
+  productId: number;
+  productTitle: string;
+  image: string;
+  price: number;
+  discount: number;
+  rating: number;
+  popularity: number;
+  description: string;
+}
+
 export default function ShopPage() {
+  const [products, setProducts] = useState<Product[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await fetch('/productsData.json');
+        if (!response.ok) {
+          throw new Error('Failed to fetch products');
+        }
+        const data: Product[] = await response.json();
+        setProducts(data);
+      } catch (err) {
+        setError(err instanceof Error ? err.message : 'An error occurred');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProducts();
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="min-h-screen p-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-500 mx-auto"></div>
+            <p className="mt-4 text-gray-600">Loading products...</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="min-h-screen p-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center">
+            <p className="text-red-500">Error: {error}</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen p-8">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl font-bold text-primary-500 mb-4">Shop</h1>
-        <p className="text-neutral-600 text-lg">
-          Browse our collection of modern kitchen tools coming soon...
-        </p>
+        <h1 className="text-4xl font-bold text-primary-500 mb-8">Shop</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {products.map((product) => (
+            <ProductCard key={product.productId} product={product} />
+          ))}
+        </div>
       </div>
     </div>
   );

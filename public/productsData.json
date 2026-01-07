@@ -1,0 +1,82 @@
+[
+  {
+    "productId": 1,
+    "productTitle": "Reusable Dinner Plate with Dip Bowl",
+    "image": " https://i.ibb.co.com/yFCp3TGg/Reusable-Dinner-Plate-with-Dip-Bowl.jpg",
+    "price": 1299,
+    "discount": 15,
+    "rating": 4.7,
+    "popularity": 92,
+    "description": "REUSABLE DINNER PLATE WITH DIP BOWL: Innovative serving tray with a detachable flip-up dip bowl that keeps food and sauces separated and secure.\n\nGREAT FOR PARTIES: Perfect for burgers and fries, chips and dip, wings and sauce, vegetables and dressing, and more.\n\nPREMIUM FOOD-SAFE MATERIAL: Made from high-quality, BPA-free material designed for long-term use.\n\nCOLLAPSIBLE DESIGN: Bowl collapses flat so plates can stack easily for space-saving storage.\n\nEASY TO CLEAN: Twist-off bowl is dishwasher safe and simple to remove for quick cleaning."
+  },
+  {
+    "productId": 2,
+    "productTitle": "Wireless Bluetooth Over-Ear Headphones",
+    "image": " https://i.ibb.co.com/20kT97Ww/Wireless-Bluetooth-Over-Ear-Headphones.jpg",
+    "price": 3499,
+    "discount": 20,
+    "rating": 4.6,
+    "popularity": 89,
+    "description": "IMMERSIVE SOUND QUALITY: High-definition stereo drivers deliver deep bass and clear audio.\n\nWIRELESS CONNECTIVITY: Stable Bluetooth connection with smartphones, tablets, and laptops.\n\nCOMFORTABLE DESIGN: Soft ear cushions and adjustable headband for extended listening.\n\nLONG BATTERY LIFE: Enjoy up to 20 hours of continuous playback.\n\nBUILT-IN CONTROLS: Manage calls, music, and volume directly from the headset."
+  },
+  {
+    "productId": 3,
+    "productTitle": "Smart Fitness Tracker Watch",
+    "image": "https://i.ibb.co.com/VWs2B44Z/Smart-Fitness-Tracker-Watch.jpg",
+    "price": 2499,
+    "discount": 10,
+    "rating": 4.5,
+    "popularity": 85,
+    "description": "ADVANCED HEALTH TRACKING: Monitors heart rate, steps, calories, and sleep patterns.\n\nWATER-RESISTANT DESIGN: Suitable for workouts and everyday wear.\n\nSMART NOTIFICATIONS: Receive calls, messages, and app alerts on your wrist.\n\nLONG-LASTING BATTERY: Up to 7 days of usage on a single charge.\n\nUSER-FRIENDLY DISPLAY: Bright touchscreen with intuitive controls."
+  },
+  {
+    "productId": 4,
+    "productTitle": "Insulated Stainless Steel Water Bottle",
+    "image": "https://i.ibb.co.com/zWx2Yjcw/Insulated-Stainless-Steel-Water-Bottle.jpg",
+    "price": 899,
+    "discount": 25,
+    "rating": 4.8,
+    "popularity": 95,
+    "description": "DOUBLE-WALL INSULATION: Keeps drinks cold for 24 hours and hot for 12 hours.\n\nPREMIUM STAINLESS STEEL: Rust-resistant and food-grade material.\n\nLEAK-PROOF LID: Secure cap prevents spills during travel.\n\nECO-FRIENDLY DESIGN: Reusable bottle reduces plastic waste.\n\nPORTABLE SIZE: Ideal for gym, office, and outdoor activities."
+  },
+  {
+    "productId": 5,
+    "productTitle": "Adjustable Aluminum Laptop Stand",
+    "image": "https://i.ibb.co.com/bRW4fzZ5/Adjustable-Aluminum-Laptop-Stand.jpg",
+    "price": 1599,
+    "discount": 18,
+    "rating": 4.4,
+    "popularity": 81,
+    "description": "ERGONOMIC DESIGN: Elevates laptop to eye level for better posture.\n\nSTRONG BUILD QUALITY: Durable aluminum supports laptops up to 17 inches.\n\nVENTILATED STRUCTURE: Improves airflow to reduce overheating.\n\nFOLDABLE DESIGN: Compact and easy to carry while traveling.\n\nANTI-SLIP PADS: Keeps devices stable during use."
+  },
+  {
+    "productId": 6,
+    "productTitle": "Wireless Charging Pad",
+    "image": "https://i.ibb.co.com/8gt72G2c/Wireless-Charging-Pad.jpg",
+    "price": 1199,
+    "discount": 12,
+    "rating": 4.3,
+    "popularity": 78,
+    "description": "FAST WIRELESS CHARGING: Supports quick charging for compatible devices.\n\nSLIM & COMPACT DESIGN: Minimal footprint for desks and nightstands.\n\nUNIVERSAL COMPATIBILITY: Works with most Qi-enabled smartphones.\n\nSAFE CHARGING TECHNOLOGY: Built-in protection against overheating and overcharging.\n\nNON-SLIP SURFACE: Keeps your device securely in place."
+  },
+  {
+    "productId": 7,
+    "productTitle": "Ergonomic Office Chair",
+    "image": "https://i.ibb.co.com/KcVPD9mk/Ergonomic-Office-Chair.jpg",
+    "price": 8999,
+    "discount": 22,
+    "rating": 4.6,
+    "popularity": 88,
+    "description": "ERGONOMIC SUPPORT: Designed to support your back and posture during long work hours.\n\nBREATHABLE MESH BACK: Enhances airflow for all-day comfort.\n\nADJUSTABLE FEATURES: Seat height, armrests, and tilt adjustments for personalized seating.\n\nSTRONG & STABLE BASE: Heavy-duty frame ensures durability and safety.\n\nSMOOTH ROLLING WHEELS: Easy movement across different floor surfaces."
+  },
+  {
+    "productId": 8,
+    "productTitle": "Smart LED Desk Lamp",
+    "image": "https://i.ibb.co.com/MDgffn1q/Smart-LED-Desk-Lamp.jpg",
+    "price": 1799,
+    "discount": 14,
+    "rating": 4.5,
+    "popularity": 83,
+    "description": "ADJUSTABLE BRIGHTNESS LEVELS: Multiple lighting modes for reading, studying, and working.\n\nEYE-CARE TECHNOLOGY: Flicker-free and low blue light to reduce eye strain.\n\nTOUCH CONTROL PANEL: Simple and responsive touch operation.\n\nENERGY EFFICIENT LED: Long-lasting LEDs with low power consumption.\n\nMODERN DESIGN: Sleek and stylish lamp suitable for any workspace."
+  }
+]
