@@ -18,9 +18,9 @@ export default function HomePage() {
               <FeaturedProducts />
               <KitchenStorage />
               <FoodServingSuppliers />
-             <KitchenEssentials />
-             <BigSale />
-             <Banner2 />
+              <KitchenEssentials />
+              <BigSale />
+              <Banner2 />
               <TipsAndAdvice />
             </div>
     </>
