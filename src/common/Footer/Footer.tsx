@@ -83,14 +83,14 @@ const Footer = () => {
             <p className={styles.contactItem}>
               <strong>Homentry LLC</strong>
             </p>
-            <a href="mailto:hello@homentry.net" className={styles.contactLink}>
-              hello@homentry.net
+            <a href="mailto:pappow@gmail.com" className={styles.contactLink}>
+              pappow@gmail.com
             </a>
-            <a href="tel:+13074009076" className={styles.contactLink}>
-              +13074009076
+            <a href="tel:01XXX" className={styles.contactLink}>
+              01XXX
             </a>
             <p className={styles.contactItem}>
-              30 N Gould St # 7619 Sheridan, Wyoming 82801, USA
+              Dhaka, Gulshan
             </p>
           </div>
 
