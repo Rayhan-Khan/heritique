@@ -62,11 +62,11 @@ const Header = () => {
           </Link>
 
           {/* Cart Icon */}
-          <button className={styles.iconButton}>
+          <Link to="/cart" className={styles.iconButton}>
             <i className="fas fa-shopping-cart"></i>
             {/* Optional: Cart badge for item count */}
             {/* <span className={styles.cartBadge}>3</span> */}
-          </button>
+          </Link>
         </div>
       </div>
     </header>
