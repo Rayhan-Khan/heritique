@@ -1,6 +1,11 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { Toaster } from 'sonner';
+import Header from './common/Header';
 import HomePage from './pages/HomePage';
+import ShopPage from './pages/ShopPage';
+import KitchenStoragePage from './pages/KitchenStoragePage';
+import BlogPage from './pages/BlogPage';
+import ContactPage from './pages/ContactPage';
 import LoginPage from './pages/LoginPage';
 import RegistrationPage from './pages/RegistrationPage';
 
@@ -8,9 +13,14 @@ function App() {
   return (
     <>
       <Toaster position="top-right" richColors closeButton />
+      <Header />
       <Routes>
         {/* All routes are now public - authentication is available but not required */}
         <Route path="/" element={<HomePage />} />
+        <Route path="/shop" element={<ShopPage />} />
+        <Route path="/kitchen-storage" element={<KitchenStoragePage />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/registration" element={<RegistrationPage />} />
 
