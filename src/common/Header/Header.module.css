@@ -10,28 +10,24 @@
 .headerContainer {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+  height: 80px;
 }
 
 .logo {
-  height: 50px;
+  height: 70px;
   width: auto;
   cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.logo:hover {
-  transform: scale(1.05);
 }
 
 .nav {
   display: flex;
   align-items: center;
-  gap: 2.5rem;
+  gap: 1.5rem;
   flex: 1;
   justify-content: center;
 }
