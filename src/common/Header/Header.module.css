@@ -44,7 +44,7 @@
 }
 
 .navItem:hover {
-  color: var(--color-primary-500);
+  color: #f5ea1b;
 }
 
 .navItem::after {
@@ -54,7 +54,7 @@
   left: 0;
   width: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--color-primary-500) 0%, var(--color-secondary-500) 100%);
+  background: #f5ea1b;
   transition: width 0.3s ease;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .navItem.active {
-  color: var(--color-primary-500);
+  color: #f5ea1b;
 }
 
 .navItem.active::after {

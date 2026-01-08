@@ -279,7 +279,7 @@ export default function ShopPage() {
                   setMinRating(0);
                   setMinPopularity(0);
                 }}
-                className="w-full mt-6 bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded-md font-medium transition-colors"
+                className="w-full mt-6 bg-[#f5ea1b] hover:bg-[#e6db0c] text-gray-900 px-4 py-2 rounded-md font-medium transition-colors"
               >
                 Reset Filters
               </button>
