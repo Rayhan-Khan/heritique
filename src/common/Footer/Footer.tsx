@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
+import { CONTACT_INFO } from '../../constants/contactInfo';
 
 const Footer = () => {
   const features = [
@@ -64,7 +65,7 @@ const Footer = () => {
             Homentry brings simple, practical kitchen tools designed to make everyday cooking and
             storage easier. Smart design for real-life homes.
           </p>
-          <p className={styles.ownerName}>– A B M Whaiduzzaman (Owner)</p>
+          <p className={styles.ownerName}>– {CONTACT_INFO.owner} ({CONTACT_INFO.ownerTitle})</p>
         </div>
 
         {/* Quick Links */}
@@ -102,14 +103,14 @@ const Footer = () => {
             <p className={styles.contactItem}>
               <strong>Homentry LLC</strong>
             </p>
-            <a href="mailto:pappow@gmail.com" className={styles.contactLink}>
-              pappow@gmail.com
+            <a href={`mailto:${CONTACT_INFO.email}`} className={styles.contactLink}>
+              {CONTACT_INFO.email}
             </a>
-            <a href="tel:+8801791001818" className={styles.contactLink}>
-              01XXX
+            <a href={`tel:${CONTACT_INFO.phone.replace(/\s/g, '')}`} className={styles.contactLink}>
+              {CONTACT_INFO.phone}
             </a>
             <p className={styles.contactItem}>
-              Dhaka, Gulshan
+              {CONTACT_INFO.address}
             </p>
           </div>
 

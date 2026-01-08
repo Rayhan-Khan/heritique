@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from './ContactSection.module.css';
+import { CONTACT_INFO } from '../../constants/contactInfo';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -34,13 +35,13 @@ const ContactSection = () => {
           <h2 className={styles.companyName}>Homentry LLC</h2>
           <div className={styles.contactInfo}>
             <div className={styles.infoItem}>
-              <strong>Phone:</strong> <a href="tel:01XXX">01XXX</a>
+              <strong>Phone:</strong> <a href={`tel:${CONTACT_INFO.phone.replace(/\s/g, '')}`}>{CONTACT_INFO.phone}</a>
             </div>
             <div className={styles.infoItem}>
-              <strong>Email:</strong> <a href="mailto:pappow@gmail.com">pappow@gmail.com</a>
+              <strong>Email:</strong> <a href={`mailto:${CONTACT_INFO.email}`}>{CONTACT_INFO.email}</a>
             </div>
             <div className={styles.infoItem}>
-              <strong>Address:</strong> Dhaka, Gulshan
+              <strong>Address:</strong> {CONTACT_INFO.address}
             </div>
           </div>
         </div>
