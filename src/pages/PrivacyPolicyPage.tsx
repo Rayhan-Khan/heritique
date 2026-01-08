@@ -19,8 +19,8 @@ const PrivacyPolicyPage = () => {
         <div className={styles.content}>
           <p className={styles.intro}>
             This Privacy Policy describes how your personal information is collected, used, and shared when you visit or make a purchase from{' '}
-            <a href="https://homentry.net" target="_blank" rel="noopener noreferrer" className={styles.link}>
-              https://homentry.net
+            <a href="https://heritique.com" target="_blank" rel="noopener noreferrer" className={styles.link}>
+              https://heritique.com
             </a>{' '}
             (the "Site").
           </p>

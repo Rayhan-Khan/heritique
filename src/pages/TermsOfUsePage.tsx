@@ -19,8 +19,8 @@ const TermsOfUsePage = () => {
         <div className={styles.content}>
           <p className={styles.intro}>
             By accessing or using{' '}
-            <a href="https://homentry.net" target="_blank" rel="noopener noreferrer" className={styles.link}>
-              https://homentry.net
+            <a href="https://heritique.com" target="_blank" rel="noopener noreferrer" className={styles.link}>
+              https://heritique.com
             </a>{' '}
             ("the Site"), you agree to comply with these Terms of Use. Please read them carefully. If you disagree with any part, do not use the Site.
           </p>
