@@ -12,7 +12,7 @@ const BlogSection = () => {
     },
     {
       id: 2,
-      image: 'https://images.unsplash.com/photo-1584990347449-39b4dfed5c86?w=800&h=600&fit=crop',
+      image: 'https://images.unsplash.com/photo-1617228069096-4638a7ffc906?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=800&h=600&fit=crop',
       title: 'Best Storage Solutions for Small Kitchens',
       excerpt: 'Limited space doesn\'t mean limited possibilities. Discover smart storage solutions that help you make the most of every inch in your compact kitchen.',
       link: '/blog/small-kitchen-storage'
