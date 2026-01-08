@@ -18,7 +18,7 @@ const RefundReturnsPage = () => {
 
         <div className={styles.content}>
           <p className={styles.intro}>
-            At <strong>Homentry LLC</strong>, your satisfaction is our top priority. If any issues arise with your order, we're here to help make it right.
+            At <strong>Heritique</strong>, your satisfaction is our top priority. If any issues arise with your order, we're here to help make it right.
           </p>
 
           <section className={styles.section}>

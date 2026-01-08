@@ -120,7 +120,7 @@
 }
 
 .footerLink:hover {
-  color: var(--color-primary-500);
+  color: #f5ea1b;
 }
 
 /* Contact Info */
@@ -145,7 +145,7 @@
 }
 
 .contactLink:hover {
-  color: var(--color-primary-500);
+  color: #e6db0c;
 }
 
 /* Payment Methods */

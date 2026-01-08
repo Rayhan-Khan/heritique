@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { FaBangladeshiTakaSign } from 'react-icons/fa6';
+import { toast } from 'sonner';
 
 interface Product {
   productId: number;
@@ -16,6 +17,7 @@ interface Product {
 const KitchenEssentials = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
+  const [cartItems, setCartItems] = useState<number[]>([]);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -35,6 +37,23 @@ const KitchenEssentials = () => {
     };
 
     fetchProducts();
+    loadCartItems();
+  }, []);
+
+  const loadCartItems = () => {
+    const cartJSON = localStorage.getItem('heritique-cart');
+    const cart = cartJSON ? JSON.parse(cartJSON) : [];
+    const productIds = cart.map((item: any) => item.productId);
+    setCartItems(productIds);
+  };
+
+  useEffect(() => {
+    const handleCartUpdate = () => {
+      loadCartItems();
+    };
+    
+    window.addEventListener('cartUpdated', handleCartUpdate);
+    return () => window.removeEventListener('cartUpdated', handleCartUpdate);
   }, []);
 
   const handleProductClick = (productId: number) => {
@@ -109,8 +128,40 @@ const KitchenEssentials = () => {
                   </div>
                 </div>
 
-                <button className="w-full bg-[#f5ea1b] hover:bg-[#e6db0c] text-gray-900 py-3 rounded-lg font-semibold transition-colors duration-200">
-                  Add to cart
+                <button 
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    
+                    // Get current cart from localStorage
+                    const cartJSON = localStorage.getItem('heritique-cart');
+                    let cart = cartJSON ? JSON.parse(cartJSON) : [];
+                    
+                    if (cartItems.includes(product.productId)) {
+                      // Remove from cart
+                      cart = cart.filter((item: any) => item.productId !== product.productId);
+                      localStorage.setItem('heritique-cart', JSON.stringify(cart));
+                      window.dispatchEvent(new Event('cartUpdated'));
+                      toast.success('Removed from cart');
+                    } else {
+                      // Add to cart
+                      const existingItem = cart.find((item: any) => item.productId === product.productId);
+                      if (existingItem) {
+                        existingItem.quantity += 1;
+                      } else {
+                        cart.push({ productId: product.productId, quantity: 1 });
+                      }
+                      localStorage.setItem('heritique-cart', JSON.stringify(cart));
+                      window.dispatchEvent(new Event('cartUpdated'));
+                      toast.success('Added to cart successfully');
+                    }
+                  }}
+                  className={`w-full py-3 rounded-lg font-semibold transition-colors duration-200 ${
+                    cartItems.includes(product.productId)
+                      ? 'bg-red-500 hover:bg-red-600 text-white'
+                      : 'bg-[#f5ea1b] hover:bg-[#e6db0c] text-gray-900'
+                  }`}
+                >
+                  {cartItems.includes(product.productId) ? 'Remove from cart' : 'Add to cart'}
                 </button>
               </div>
             </div>

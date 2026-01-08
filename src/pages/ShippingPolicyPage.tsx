@@ -11,7 +11,7 @@ const ShippingPolicyPage = () => {
 
         <div className={styles.content}>
           <p className={styles.intro}>
-            At <strong>Homentry LLC</strong>, we work directly with trusted manufacturers to bring you high-quality products at competitive prices — often up to <strong>60% off</strong> retail!
+            At <strong>Heritique</strong>, we work directly with trusted manufacturers to bring you high-quality products at competitive prices — often up to <strong>60% off</strong> retail!
           </p>
 
           <section className={styles.section}>

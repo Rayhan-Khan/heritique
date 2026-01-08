@@ -1,8 +1,40 @@
 import { Link, useLocation } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import styles from './Header.module.css';
 
 const Header = () => {
   const location = useLocation();
+  const [cartCount, setCartCount] = useState(0);
+
+  // Listen for cart updates
+  useEffect(() => {
+    const updateCartCount = () => {
+      const savedCart = localStorage.getItem('heritique-cart');
+      if (savedCart) {
+        try {
+          const cart = JSON.parse(savedCart);
+          const total = cart.reduce((sum: number, item: any) => sum + item.quantity, 0);
+          setCartCount(total);
+        } catch (err) {
+          console.error('Failed to load cart:', err);
+        }
+      } else {
+        setCartCount(0);
+      }
+    };
+
+    updateCartCount();
+
+    // Listen for storage changes (cart updates from other components)
+    window.addEventListener('storage', updateCartCount);
+    // Listen for custom event
+    window.addEventListener('cartUpdated', updateCartCount);
+
+    return () => {
+      window.removeEventListener('storage', updateCartCount);
+      window.removeEventListener('cartUpdated', updateCartCount);
+    };
+  }, []);
 
   const navItems = [
     { name: 'Home', path: '/' },
@@ -64,8 +96,7 @@ const Header = () => {
           {/* Cart Icon */}
           <Link to="/cart" className={styles.iconButton}>
             <i className="fas fa-shopping-cart"></i>
-            {/* Optional: Cart badge for item count */}
-            {/* <span className={styles.cartBadge}>3</span> */}
+            {cartCount > 0 && <span className={styles.cartBadge}>{cartCount}</span>}
           </Link>
         </div>
       </div>

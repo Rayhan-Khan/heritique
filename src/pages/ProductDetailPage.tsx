@@ -198,7 +198,33 @@ export default function ProductDetailPage() {
                 </button>
               </div>
 
-              <button className="flex-1 bg-[#f5ea1b] hover:bg-[#e6db0c] text-gray-900 px-8 py-3 rounded-md font-bold text-lg transition-colors duration-200">
+              <button 
+                onClick={() => {
+                  if (product) {
+                    // Get current cart from localStorage
+                    const cartJSON = localStorage.getItem('heritique-cart');
+                    let cart = cartJSON ? JSON.parse(cartJSON) : [];
+                    
+                    // Find product in cart or add it
+                    const existingItem = cart.find((item: any) => item.productId === product.productId);
+                    if (existingItem) {
+                      existingItem.quantity += quantity;
+                    } else {
+                      cart.push({ productId: product.productId, quantity });
+                    }
+                    
+                    // Save to localStorage
+                    localStorage.setItem('heritique-cart', JSON.stringify(cart));
+                    
+                    // Dispatch custom event to update header badge
+                    window.dispatchEvent(new Event('cartUpdated'));
+                    
+                    // Reset quantity after adding
+                    setQuantity(1);
+                  }
+                }}
+                className="flex-1 bg-[#f5ea1b] hover:bg-[#e6db0c] text-gray-900 px-8 py-3 rounded-md font-bold text-lg transition-colors duration-200"
+              >
                 Add to cart
               </button>
             </div>
