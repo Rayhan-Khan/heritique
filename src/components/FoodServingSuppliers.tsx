@@ -13,7 +13,7 @@ interface Product {
   description: string;
 }
 
-const KitchenEssentials = () => {
+const FoodServingSuppliers = () => {
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -25,8 +25,8 @@ const KitchenEssentials = () => {
           throw new Error('Failed to fetch products');
         }
         const data: Product[] = await response.json();
-        // Get products 10-13 for kitchen essentials section
-        setProducts(data.slice(4, 8));
+        // Get products 6-9 for food serving section
+        setProducts(data.slice(5, 9));
       } catch (err) {
         console.error('Error fetching products:', err);
       } finally {
@@ -45,7 +45,7 @@ const KitchenEssentials = () => {
     return (
       <div className="text-center py-12">
         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-500 mx-auto"></div>
-        <p className="mt-4 text-gray-600">Loading kitchen essentials...</p>
+        <p className="mt-4 text-gray-600">Loading products...</p>
       </div>
     );
   }
@@ -53,7 +53,7 @@ const KitchenEssentials = () => {
   return (
     <div className="mb-16">
       <div className="flex justify-between items-center mb-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f]">Kitchen Essentials</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a5f]">Food Serving Suppliers</h2>
         <Link
           to="/shop"
           className="text-[#1e3a5f] hover:text-[#2d5282] font-semibold flex items-center gap-2 transition-colors"
@@ -121,4 +121,4 @@ const KitchenEssentials = () => {
   );
 };
 
-export default KitchenEssentials;
+export default FoodServingSuppliers;
