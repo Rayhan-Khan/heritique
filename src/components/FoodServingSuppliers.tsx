@@ -109,7 +109,7 @@ const FoodServingSuppliers = () => {
                   </div>
                 </div>
 
-                <button className="w-full bg-yellow-400 hover:bg-yellow-500 text-gray-900 py-3 rounded-lg font-semibold transition-colors duration-200">
+                <button className="w-full bg-[#f5ea1b] hover:bg-[#e6db0c] text-gray-900 py-3 rounded-lg font-semibold transition-colors duration-200">
                   Add to cart
                 </button>
               </div>

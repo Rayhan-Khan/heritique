@@ -25,10 +25,14 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     navigate(`/product/${product.productId}`);
   };
 
+  const handleButtonClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+  };
+
   return (
     <div
       onClick={handleCardClick}
-      className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer"
+      className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer flex flex-col h-full"
     >
       <div className="relative">
         <img
@@ -42,8 +46,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           </div>
         )}
       </div>
-      <div className="p-4">
-        <h3 className="text-lg font-semibold text-gray-800 mb-2 line-clamp-2">
+      <div className="p-4 flex flex-col flex-1">
+        <h3 className="text-lg font-semibold text-gray-800 mb-2 line-clamp-2 min-h-14">
           {product.productTitle}
         </h3>
         <div className="flex items-center mb-2">
@@ -67,7 +71,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
             </span>
           </div>
         </div>
-        <div className="flex items-center justify-between">
+        <div className="space-y-3 mt-auto">
           <div className="flex items-center space-x-2">
             <span className="text-xl font-bold text-gray-800 flex items-center">
               <FaBangladeshiTakaSign className="mr-1" /> {(discountedPrice / 100).toFixed(2)}
@@ -78,7 +82,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
               </span>
             )}
           </div>
-          <button className="bg-primary-500 hover:bg-primary-600 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+          <button 
+            onClick={handleButtonClick}
+            className="w-full bg-[#f5ea1b] hover:bg-[#e6db0c] text-gray-900 px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+          >
             Add to Cart
           </button>
         </div>

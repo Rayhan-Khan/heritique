@@ -52,18 +52,18 @@ const Banner2 = () => {
           </div>
 
           {/* Right Side - Content */}
-          <div className="flex flex-col justify-center p-12 bg-yellow-400">
+          <div className="flex flex-col justify-center p-12 bg-[#f5ea1b]">
             <h2 className="text-5xl font-bold text-gray-900 mb-6">
               We Keep Kitchens Simple
             </h2>
             
-            <p className="text-gray-800 text-lg mb-8 leading-relaxed">
+            <p className="text-gray-900 text-lg mb-8 leading-relaxed">
               We believe every kitchen deserves tools that make cooking easier and more enjoyable—without breaking the bank.
             </p>
 
             <Link
               to="/shop"
-              className="inline-block bg-[#1e3a5f] hover:bg-[#2d5282] text-white px-8 py-4 rounded-lg font-bold text-lg transition-colors duration-200 shadow-lg self-start"
+              className="inline-block bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-lg font-bold text-lg transition-colors duration-200 shadow-lg self-start"
             >
               Explore Products
             </Link>
@@ -79,7 +79,7 @@ const Banner2 = () => {
             <span className="text-gray-200 text-lg">Find everything your need to start.</span>
             <Link
               to="/shop"
-              className="bg-yellow-400 hover:bg-yellow-500 text-[#1e3a5f] px-8 py-3 rounded-lg font-bold transition-colors duration-200 whitespace-nowrap"
+              className="bg-[#f5ea1b] hover:bg-[#e6db0c] text-gray-900 px-8 py-3 rounded-lg font-bold transition-colors duration-200 whitespace-nowrap"
             >
               Explore Now
             </Link>

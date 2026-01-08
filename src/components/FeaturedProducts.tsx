@@ -90,7 +90,7 @@ const FeaturedProduct = () => {
 
             <Link
               to="/shop"
-              className="inline-block bg-[#1e3a5f] hover:bg-[#2d5282] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200 shadow-md hover:shadow-lg"
+              className="inline-block bg-[#f5ea1b] hover:bg-[#e6db0c] text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200 shadow-md hover:shadow-lg"
             >
               Buy Now
             </Link>

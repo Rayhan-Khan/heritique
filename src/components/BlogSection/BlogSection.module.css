@@ -69,7 +69,7 @@
 }
 
 .readMore {
-  color: #2186e8;
+  color: #f5ea1b;
   font-size: 0.95rem;
   font-weight: 600;
   text-decoration: none;
@@ -78,7 +78,7 @@
 }
 
 .readMore:hover {
-  color: #1a6bc4;
+  color: #e6db0c;
   transform: translateX(5px);
 }
 

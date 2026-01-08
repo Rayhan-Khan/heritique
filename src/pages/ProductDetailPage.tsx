@@ -198,7 +198,7 @@ export default function ProductDetailPage() {
                 </button>
               </div>
 
-              <button className="flex-1 bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-3 rounded-md font-bold text-lg transition-colors duration-200">
+              <button className="flex-1 bg-[#f5ea1b] hover:bg-[#e6db0c] text-gray-900 px-8 py-3 rounded-md font-bold text-lg transition-colors duration-200">
                 Add to cart
               </button>
             </div>
