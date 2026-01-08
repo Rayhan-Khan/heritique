@@ -33,6 +33,7 @@ const CheckoutSection = () => {
   });
 
   const [giftCard, setGiftCard] = useState('');
+  const [showInvoiceModal, setShowInvoiceModal] = useState(false);
 
   const orderItems: OrderItem[] = [
     {
@@ -76,8 +77,12 @@ const CheckoutSection = () => {
 
   const handlePlaceOrder = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle order placement
-    console.log('Order placed', formData, cardData);
+    // Clear the cart from localStorage
+    localStorage.removeItem('heritique-cart');
+    // Dispatch event to update cart badge
+    window.dispatchEvent(new Event('cartUpdated'));
+    // Show invoice modal
+    setShowInvoiceModal(true);
   };
 
   return (
@@ -425,6 +430,100 @@ const CheckoutSection = () => {
           </div>
         </div>
       </div>
+
+      {/* Invoice Modal */}
+      {showInvoiceModal && (
+        <div className={styles.modalOverlay}>
+          <div className={styles.modalContent}>
+            <div className={styles.modalHeader}>
+              <h2>Order Invoice</h2>
+              <button 
+                className={styles.closeButton} 
+                onClick={() => setShowInvoiceModal(false)}
+              >
+                ✕
+              </button>
+            </div>
+
+            <div className={styles.invoiceBody}>
+              <div className={styles.invoiceSection}>
+                <h3>Order Confirmation</h3>
+                <p>Thank you for your order!</p>
+              </div>
+
+              <div className={styles.invoiceSection}>
+                <h4>Billing Information</h4>
+                <p><strong>{formData.firstName} {formData.lastName}</strong></p>
+                <p>{formData.streetAddress}</p>
+                {formData.apartment && <p>{formData.apartment}</p>}
+                <p>{formData.city}, {formData.state} {formData.zipCode}</p>
+                <p>{formData.country}</p>
+                <p>Email: {formData.email}</p>
+                {formData.phone && <p>Phone: {formData.phone}</p>}
+              </div>
+
+              <div className={styles.invoiceSection}>
+                <h4>Order Items</h4>
+                <table className={styles.invoiceTable}>
+                  <thead>
+                    <tr>
+                      <th>Product</th>
+                      <th>Qty</th>
+                      <th>Price</th>
+                      <th>Total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {orderItems.map((item) => (
+                      <tr key={item.id}>
+                        <td>{item.name}</td>
+                        <td>{item.quantity}</td>
+                        <td>${item.price.toFixed(2)}</td>
+                        <td>${(item.price * item.quantity).toFixed(2)}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+
+              <div className={styles.invoiceSection}>
+                <div className={styles.invoiceSummary}>
+                  <div className={styles.summaryRow}>
+                    <span>Subtotal:</span>
+                    <span>${subtotal.toFixed(2)}</span>
+                  </div>
+                  <div className={styles.summaryRow}>
+                    <span>Shipping:</span>
+                    <span>Free</span>
+                  </div>
+                  <div className={styles.summaryRowTotal}>
+                    <span>Total:</span>
+                    <span>${total.toFixed(2)}</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className={styles.invoiceSection}>
+                <h4>Payment Method</h4>
+                <p>
+                  {formData.paymentMethod === 'card' && 'Credit Card'}
+                  {formData.paymentMethod === 'bankTransfer' && 'Direct Bank Transfer'}
+                  {formData.paymentMethod === 'cashOnDelivery' && 'Cash on Delivery'}
+                </p>
+              </div>
+            </div>
+
+            <div className={styles.modalFooter}>
+              <button 
+                className={styles.closeModalButton}
+                onClick={() => setShowInvoiceModal(false)}
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

@@ -1,5 +1,6 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { Toaster } from 'sonner';
+import ScrollToTop from './components/ScrollToTop';
 import Header from './common/Header';
 import Footer from './common/Footer';
 import HomePage from './pages/HomePage';
@@ -22,6 +23,7 @@ function App() {
   return (
     <>
       <Toaster position="top-right" richColors closeButton />
+      <ScrollToTop />
       <Header />
       <Routes>
         {/* All routes are now public - authentication is available but not required */}

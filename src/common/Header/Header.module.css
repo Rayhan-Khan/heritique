@@ -36,7 +36,7 @@
   position: relative;
   font-size: 16px;
   font-weight: 500;
-  color: var(--color-neutral-900);
+  color: #000;
   text-decoration: none;
   padding: 0.5rem 0;
   cursor: pointer;
@@ -44,7 +44,7 @@
 }
 
 .navItem:hover {
-  color: #f5ea1b;
+  color: #000;
 }
 
 .navItem::after {
@@ -63,7 +63,7 @@
 }
 
 .navItem.active {
-  color: #f5ea1b;
+  color: #000;
 }
 
 .navItem.active::after {

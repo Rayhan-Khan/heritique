@@ -60,9 +60,9 @@ const Footer = () => {
               className={styles.logoImage}
             />
           </Link>
-          <h3 className={styles.companyName}>Homentry LLC</h3>
+          <h3 className={styles.companyName}>Heritique</h3>
           <p className={styles.companyDescription}>
-            Homentry brings simple, practical kitchen tools designed to make everyday cooking and
+            Heritique brings simple, practical kitchen tools designed to make everyday cooking and
             storage easier. Smart design for real-life homes.
           </p>
           <p className={styles.ownerName}>– {CONTACT_INFO.owner} ({CONTACT_INFO.ownerTitle})</p>
@@ -101,7 +101,7 @@ const Footer = () => {
           <h4 className={styles.sectionTitle}>Contact Info</h4>
           <div className={styles.contactInfo}>
             <p className={styles.contactItem}>
-              <strong>Homentry LLC</strong>
+              <strong>Heritique</strong>
             </p>
             <a href={`mailto:${CONTACT_INFO.email}`} className={styles.contactLink}>
               {CONTACT_INFO.email}

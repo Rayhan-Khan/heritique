@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaBangladeshiTakaSign } from 'react-icons/fa6';
+import { toast } from 'sonner';
 
 interface Product {
   productId: number;
@@ -20,6 +21,28 @@ interface ProductCardProps {
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const navigate = useNavigate();
   const discountedPrice = product.price - (product.price * product.discount / 100);
+  const [isInCart, setIsInCart] = useState(false);
+
+  useEffect(() => {
+    // Load cart items on mount
+    loadCartItems();
+  }, []);
+
+  const loadCartItems = () => {
+    const cartJSON = localStorage.getItem('heritique-cart');
+    const cart = cartJSON ? JSON.parse(cartJSON) : [];
+    const isInCart = cart.some((item: any) => item.productId === product.productId);
+    setIsInCart(isInCart);
+  };
+
+  useEffect(() => {
+    const handleCartUpdate = () => {
+      loadCartItems();
+    };
+    
+    window.addEventListener('cartUpdated', handleCartUpdate);
+    return () => window.removeEventListener('cartUpdated', handleCartUpdate);
+  }, []);
 
   const handleCardClick = () => {
     navigate(`/product/${product.productId}`);
@@ -27,6 +50,29 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 
   const handleButtonClick = (e: React.MouseEvent) => {
     e.stopPropagation();
+    
+    // Get current cart from localStorage
+    const cartJSON = localStorage.getItem('heritique-cart');
+    let cart = cartJSON ? JSON.parse(cartJSON) : [];
+    
+    if (isInCart) {
+      // Remove from cart
+      cart = cart.filter((item: any) => item.productId !== product.productId);
+      localStorage.setItem('heritique-cart', JSON.stringify(cart));
+      window.dispatchEvent(new Event('cartUpdated'));
+      toast.success('Removed from cart');
+    } else {
+      // Add to cart
+      const existingItem = cart.find((item: any) => item.productId === product.productId);
+      if (existingItem) {
+        existingItem.quantity += 1;
+      } else {
+        cart.push({ productId: product.productId, quantity: 1 });
+      }
+      localStorage.setItem('heritique-cart', JSON.stringify(cart));
+      window.dispatchEvent(new Event('cartUpdated'));
+      toast.success('Added to cart successfully');
+    }
   };
 
   return (
@@ -84,9 +130,13 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           </div>
           <button 
             onClick={handleButtonClick}
-            className="w-full bg-[#f5ea1b] hover:bg-[#e6db0c] text-gray-900 px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+            className={`w-full px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+              isInCart
+                ? 'bg-red-500 hover:bg-red-600 text-white'
+                : 'bg-[#f5ea1b] hover:bg-[#e6db0c] text-gray-900'
+            }`}
           >
-            Add to Cart
+            {isInCart ? 'Remove from Cart' : 'Add to Cart'}
           </button>
         </div>
       </div>
