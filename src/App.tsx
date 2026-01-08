@@ -10,6 +10,10 @@ import BlogPostPage from './pages/BlogPostPage';
 import ContactPage from './pages/ContactPage';
 import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import ShippingPolicyPage from './pages/ShippingPolicyPage';
+import RefundReturnsPage from './pages/RefundReturnsPage';
+import TermsOfUsePage from './pages/TermsOfUsePage';
 import LoginPage from './pages/LoginPage';
 import RegistrationPage from './pages/RegistrationPage';
 import ProductDetailPage from './pages/ProductDetailPage';
@@ -30,6 +34,10 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/checkout" element={<CheckoutPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+        <Route path="/shipping-policy" element={<ShippingPolicyPage />} />
+        <Route path="/refund-returns" element={<RefundReturnsPage />} />
+        <Route path="/terms-of-use" element={<TermsOfUsePage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/registration" element={<RegistrationPage />} />
 
