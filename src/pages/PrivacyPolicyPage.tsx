@@ -1,5 +1,4 @@
-import { Link } from 'react-router-dom';
-import styles from './PrivacyPolicyPage.module.css';
+import styles from './PolicyPage.module.css';
 import { CONTACT_INFO } from '../constants/contactInfo';
 
 const PrivacyPolicyPage = () => {
