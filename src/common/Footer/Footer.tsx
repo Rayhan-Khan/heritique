@@ -105,7 +105,7 @@ const Footer = () => {
             <a href="mailto:pappow@gmail.com" className={styles.contactLink}>
               pappow@gmail.com
             </a>
-            <a href="tel:01XXX" className={styles.contactLink}>
+            <a href="tel:+8801791001818" className={styles.contactLink}>
               01XXX
             </a>
             <p className={styles.contactItem}>

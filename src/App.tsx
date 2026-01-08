@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage';
 import ShopPage from './pages/ShopPage';
 import KitchenStoragePage from './pages/KitchenStoragePage';
 import BlogPage from './pages/BlogPage';
+import BlogPostPage from './pages/BlogPostPage';
 import ContactPage from './pages/ContactPage';
 import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage';
@@ -25,6 +26,7 @@ function App() {
         <Route path="/product/:productId" element={<ProductDetailPage />} />
         <Route path="/kitchen-storage" element={<KitchenStoragePage />} />
         <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog/:slug" element={<BlogPostPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/checkout" element={<CheckoutPage />} />

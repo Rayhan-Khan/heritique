@@ -7,7 +7,7 @@ const Header = () => {
   const navItems = [
     { name: 'Home', path: '/' },
     { name: 'Shop', path: '/shop' },
-    { name: 'Kitchen Storage', path: '/shop' },
+    { name: 'Kitchen Storage', path: '/kitchen-storage' },
     { name: 'Blog', path: '/blog' },
     { name: 'Contact us', path: '/contact' },
   ];
@@ -16,7 +16,7 @@ const Header = () => {
     if (path === '/') {
       return location.pathname === '/';
     }
-    return location.pathname.startsWith(path);
+    return location.pathname === path;
   };
 
   return (

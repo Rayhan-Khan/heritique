@@ -5,17 +5,17 @@ const HeroSection = () => {
   const products = [
     {
       id: 1,
-      image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=600&fit=crop&q=80',
+      image: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop',
       alt: 'Kitchen Utensils'
     },
     {
       id: 2,
-      image: 'https://images.unsplash.com/photo-1615485020745-66e1c3e8e843?w=600&h=600&fit=crop&q=80',
+      image: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400&h=400&fit=crop',
       alt: 'Wooden Kitchen Tools'
     },
     {
       id: 3,
-      image: 'https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=600&h=600&fit=crop&q=80',
+      image: 'https://images.unsplash.com/photo-1585659722983-3a675dabf23d?w=400&h=400&fit=crop',
       alt: 'Food Storage Containers'
     }
   ];
