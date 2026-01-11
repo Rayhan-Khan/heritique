@@ -35,7 +35,7 @@ const TermsOfUsePage = () => {
           <section className={styles.section}>
             <h2 className={styles.sectionTitle}>Intellectual Property</h2>
             <p>
-              All content on the Site (logos, images, text, designs) is owned by or licensed to <strong>Homentry LLC</strong>. You may not copy, modify, or distribute any content without our permission.
+              All content on the Site (logos, images, text, designs) is owned by or licensed to <strong>Heritique</strong>. You may not copy, modify, or distribute any content without our permission.
             </p>
           </section>
 
