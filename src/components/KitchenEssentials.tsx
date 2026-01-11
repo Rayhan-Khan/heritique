@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { FaBangladeshiTakaSign } from 'react-icons/fa6';
+import { FaDollarSign } from 'react-icons/fa6';
 import { toast } from 'sonner';
 
 interface Product {
@@ -84,7 +84,7 @@ const KitchenEssentials = () => {
         </Link>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
         {products.map((product) => {
           const discountedPrice = product.price - (product.price * product.discount / 100);
           const hasDiscount = product.discount > 0;
@@ -117,12 +117,12 @@ const KitchenEssentials = () => {
                   <div className="flex flex-col">
                     {hasDiscount && (
                       <span className="text-sm text-gray-400 line-through flex items-center">
-                        <FaBangladeshiTakaSign className="mr-1" />
+                        <FaDollarSign className="mr-1" />
                         {(product.price / 100).toFixed(2)}
                       </span>
                     )}
                     <span className="text-xl font-bold text-gray-900 flex items-center">
-                      <FaBangladeshiTakaSign className="mr-1" />
+                      <FaDollarSign className="mr-1" />
                       {(discountedPrice / 100).toFixed(2)}
                     </span>
                   </div>
