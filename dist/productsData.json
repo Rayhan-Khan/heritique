@@ -1,0 +1,102 @@
+[
+  {
+    "productId": 1,
+    "productTitle": "Reusable Dinner Plate with Dip Bowl",
+    "image": "https://i.ibb.co.com/yFCp3TGg/Reusable-Dinner-Plate-with-Dip-Bowl.jpg",
+    "price": 1299,
+    "discount": 15,
+    "rating": 4.7,
+    "popularity": 92,
+    "description": "REUSABLE DINNER PLATE WITH DIP BOWL: Innovative serving tray with a detachable flip-up dip bowl that keeps food and sauces separated and secure.\n\nGREAT FOR PARTIES: Perfect for burgers and fries, chips and dip, wings and sauce, vegetables and dressing, and more.\n\nPREMIUM FOOD-SAFE MATERIAL: Made from high-quality, BPA-free material designed for long-term use.\n\nCOLLAPSIBLE DESIGN: Bowl collapses flat so plates can stack easily for space-saving storage.\n\nEASY TO CLEAN: Twist-off bowl is dishwasher safe and simple to remove for quick cleaning."
+  },
+  {
+    "productId": 2,
+    "productTitle": "10 Pack Refrigerator Pantry Organizer Bins, Stackable Fridge Storage Containers",
+    "image": "https://i.ibb.co.com/WWdYxTtt/Refrigerator-Pantry-Organizer-Bins.jpg",
+    "price": 2799,
+    "discount": 18,
+    "rating": 4.6,
+    "popularity": 156,
+    "description": "MAXIMIZE FRIDGE SPACE: Set of 10 clear storage bins designed to organize your refrigerator and pantry efficiently.\n\nCLEAR DESIGN: Transparent material lets you see contents at a glance without opening containers.\n\nSTACKABLE & MODULAR: Bins stack securely to save vertical space and create custom storage solutions.\n\nBPA-FREE MATERIAL: Safe, durable plastic construction suitable for food storage.\n\nEASY TO CLEAN: Smooth surfaces wipe clean quickly, dishwasher safe for convenience."
+  },
+  {
+    "productId": 3,
+    "productTitle": "12-in-1 Vegetable Chopper, Multi-Blade Food Chopper with Container",
+    "image": "https://i.ibb.co.com/s9ZSzmfz/Food-Chopper-with-Container.jpg",
+    "price": 2499,
+    "discount": 20,
+    "rating": 4.5,
+    "popularity": 203,
+    "description": "MULTI-FUNCTIONAL: 12 interchangeable blades for slicing, dicing, chopping, and spiralizing vegetables and fruits.\n\nBUILT-IN CONTAINER: Large collection container catches chopped food, reducing mess and cleanup time.\n\nSHARP STAINLESS STEEL BLADES: Professional-grade blades stay sharp longer for consistent cutting.\n\nSAFETY FEATURES: Hand guard protects fingers while food pusher ensures safe operation.\n\nEASY STORAGE: All blades store inside the container for compact, organized storage."
+  },
+  {
+    "productId": 4,
+    "productTitle": "Stainless Steel Mixing Bowls Set with Lids, 5-Piece Nesting Bowls",
+    "image": "https://i.ibb.co.com/1tgymbxm/Stainless-Steel-Mixing-Bowls.jpg",
+    "price": 3299,
+    "discount": 15,
+    "rating": 4.8,
+    "popularity": 187,
+    "description": "COMPLETE SET: Five stainless steel bowls in graduated sizes (1.5, 2, 3, 4, and 5 quarts) with matching airtight lids.\n\nPREMIUM STAINLESS STEEL: Durable, rust-resistant construction won't retain odors or stains.\n\nNESTING DESIGN: Bowls nest inside each other for space-saving storage in any kitchen.\n\nVERSATILE USE: Perfect for mixing, marinating, serving, and storing food.\n\nDISHWASHER SAFE: Easy cleanup, bowls and lids are dishwasher safe."
+  },
+  {
+    "productId": 5,
+    "productTitle": "Bamboo Cutting Board Set with Juice Groove, 3-Piece Kitchen Chopping Boards",
+    "image": "https://i.ibb.co.com/Zp1gwFCg/Bamboo-Cutting-Board-Set-with-Juice-Groove.jpg",
+    "price": 2199,
+    "discount": 12,
+    "rating": 4.7,
+    "popularity": 168,
+    "description": "SUSTAINABLE BAMBOO: Eco-friendly bamboo construction is harder than maple, gentle on knife blades.\n\nJUICE GROOVE DESIGN: Deep grooves catch liquids from meats, fruits, and vegetables to prevent spills.\n\nTHREE SIZES: Small, medium, and large boards for different food prep tasks.\n\nANTI-BACTERIAL: Natural bamboo has antibacterial properties for safer food preparation.\n\nEASY MAINTENANCE: Hand wash with soap and water, occasional oil treatment keeps boards looking new."
+  },
+  {
+    "productId": 6,
+    "productTitle": "Glass Food Storage Containers with Lids, 18-Piece Set BPA-Free",
+    "image": "https://i.ibb.co.com/s953hc63/Glass-Food-Storage-Containers-with-Lids.jpg",
+    "price": 4599,
+    "discount": 25,
+    "rating": 4.6,
+    "popularity": 241,
+    "description": "COMPLETE STORAGE SOLUTION: 9 glass containers with 9 snap-lock lids in various sizes for all storage needs.\n\nBOROSILICATE GLASS: Heat-resistant glass safe for oven, microwave, freezer, and dishwasher.\n\nAIRTIGHT LIDS: BPA-free plastic lids with silicone seals keep food fresh longer.\n\nSTACKABLE DESIGN: Space-saving rectangular shape stacks neatly in fridge and cabinets.\n\nVERSATILE USE: Perfect for meal prep, leftovers, lunch boxes, and food storage."
+  },
+  {
+    "productId": 7,
+    "productTitle": "Stainless Steel Kitchen Utensil Set, 10-Piece Cooking Tools with Holder",
+    "image": "https://i.ibb.co.com/93nvmmjJ/Stainless-Steel-Kitchen-Utensil-Set.jpg",
+    "price": 3899,
+    "discount": 22,
+    "rating": 4.5,
+    "popularity": 195,
+    "description": "COMPLETE UTENSIL SET: 10 essential cooking tools including spatulas, ladles, spoons, whisk, and tongs.\n\nPREMIUM STAINLESS STEEL: Durable construction resists rust, corrosion, and won't bend or break.\n\nHEAT RESISTANT: Safe for use with hot foods and high-temperature cooking up to 480°F.\n\nERGONOMIC HANDLES: Comfortable grip handles with hanging loops for easy storage.\n\nINCLUDES HOLDER: Stylish stainless steel utensil holder keeps tools organized on countertop."
+  },
+  {
+    "productId": 8,
+    "productTitle": "Non-Stick Ceramic Cookware Set, 12-Piece Pots and Pans with Glass Lids",
+    "image": "https://i.ibb.co.com/Tx8J0smC/Non-Stick-Ceramic-Cookware-Set.jpg",
+    "price": 7999,
+    "discount": 30,
+    "rating": 4.8,
+    "popularity": 312,
+    "description": "COMPLETE COOKWARE SET: 12 pieces including frying pans, saucepans, stock pot, and tempered glass lids.\n\nCERAMIC NON-STICK: PFOA-free ceramic coating ensures healthy cooking with minimal oil needed.\n\nEVEN HEAT DISTRIBUTION: Aluminum construction with ceramic coating heats evenly, no hot spots.\n\nCOOL-TOUCH HANDLES: Bakelite handles stay cool during cooking for safe handling.\n\nOVEN SAFE: Cookware safe up to 350°F, suitable for stovetop to oven cooking."
+  },
+  {
+    "productId": 9,
+    "productTitle": "Clear Refrigerator Storage Organizer Bins with Handles",
+    "image": "https://i.ibb.co.com/Wpt1V4V6/refrigerator2.jpg",
+    "price": 1899,
+    "discount": 10,
+    "rating": 4.4,
+    "popularity": 143,
+    "description": "EASY ACCESS DESIGN: Built-in handles make it easy to pull bins out from deep shelves and cabinets.\n\nCRYSTAL CLEAR: See-through design allows quick identification of stored items without opening.\n\nVERSATILE SIZE: Perfect for organizing fruits, vegetables, snacks, and beverages in fridge or pantry.\n\nDURABLE CONSTRUCTION: BPA-free, shatterproof plastic withstands daily use and temperature changes.\n\nEASY MAINTENANCE: Smooth interior surfaces clean quickly with soap and water."
+  },
+  {
+    "productId": 10,
+    "productTitle": "Premium Coffee Maker with Thermal Carafe, 12-Cup Programmable Brewer",
+    "image": "https://i.ibb.co.com/TqhCbrkJ/coffee.jpg",
+    "price": 5499,
+    "discount": 28,
+    "rating": 4.7,
+    "popularity": 267,
+    "description": "PROGRAMMABLE BREWING: Set your brew time up to 24 hours in advance for fresh coffee when you wake.\n\nTHERMAL CARAFE: Double-wall stainless steel carafe keeps coffee hot for hours without a heating plate.\n\nBREW STRENGTH CONTROL: Choose regular or bold brewing for customized coffee strength.\n\nLARGE CAPACITY: 12-cup capacity perfect for families or entertaining guests.\n\nAUTO SHUT-OFF: Safety feature automatically turns off after brewing for peace of mind."
+  }
+]
