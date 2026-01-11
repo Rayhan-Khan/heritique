@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { FaBangladeshiTakaSign } from 'react-icons/fa6';
+import { FaDollarSign } from 'react-icons/fa6';
 import ProductCard from '../components/ProductCard';
 
 interface Product {
@@ -164,12 +164,12 @@ export default function ProductDetailPage() {
             <div className="flex items-center gap-4 mb-6">
               {product.discount > 0 && (
                 <span className="text-xl text-gray-400 line-through flex items-center">
-                  <FaBangladeshiTakaSign className="mr-1" />
+                  <FaDollarSign className="mr-1" />
                   {(product.price / 100).toFixed(2)}
                 </span>
               )}
               <span className="text-3xl font-bold text-gray-900 flex items-center">
-                <FaBangladeshiTakaSign className="mr-2" />
+                <FaDollarSign className="mr-2" />
                 {(discountedPrice / 100).toFixed(2)}
               </span>
             </div>
@@ -261,7 +261,7 @@ export default function ProductDetailPage() {
         {/* Related Products Section */}
         <div className="mt-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">Related products</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
             {allProducts.map((relatedProduct) => (
               <ProductCard key={relatedProduct.productId} product={relatedProduct} />
             ))}

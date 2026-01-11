@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FaBangladeshiTakaSign } from 'react-icons/fa6';
+import { FaDollarSign } from 'react-icons/fa6';
 import { toast } from 'sonner';
 
 interface Product {
@@ -120,11 +120,11 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         <div className="space-y-3 mt-auto">
           <div className="flex items-center space-x-2">
             <span className="text-xl font-bold text-gray-800 flex items-center">
-              <FaBangladeshiTakaSign className="mr-1" /> {(discountedPrice / 100).toFixed(2)}
+              <FaDollarSign className="mr-1" /> {(discountedPrice / 100).toFixed(2)}
             </span>
             {product.discount > 0 && (
               <span className="text-sm text-gray-500 line-through flex items-center">
-                <FaBangladeshiTakaSign className="mr-1" /> {(product.price / 100).toFixed(2)}
+                <FaDollarSign className="mr-1" /> {(product.price / 100).toFixed(2)}
               </span>
             )}
           </div>

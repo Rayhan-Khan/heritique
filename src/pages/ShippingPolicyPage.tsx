@@ -39,7 +39,7 @@ const ShippingPolicyPage = () => {
           <section className={styles.section}>
             <h2 className={styles.sectionTitle}>Customs & Duties</h2>
             <p>
-              Please note, <strong>Homentry LLC is not responsible for any customs fees or duties</strong> that may apply upon arrival. By placing an order, you acknowledge that packages may incur such charges based on your country's regulations.
+              Please note, <strong>Heritique is not responsible for any customs fees or duties</strong> that may apply upon arrival. By placing an order, you acknowledge that packages may incur such charges based on your country's regulations.
             </p>
           </section>
 
