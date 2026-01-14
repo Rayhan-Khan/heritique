@@ -45,10 +45,6 @@ const CartSection = () => {
     ));
   };
 
-  const removeItem = (id: number) => {
-    setCartItems(cartItems.filter(item => item.id !== id));
-  };
-
   const subtotal = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
   const shipping = 0; // Free shipping
   const total = subtotal + shipping;
